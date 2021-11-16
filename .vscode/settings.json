@@ -1,0 +1,79 @@
+{
+  "diffEditor.ignoreTrimWhitespace": false,
+  "workbench.colorTheme": "One Monokai",
+  "editor.fontSize": 16,
+  "workbench.editor.enablePreview": false, //vscode打开窗口不覆盖
+  "editor.formatOnSave": true, // #每次保存的时候自动格式化
+  // 自动修复
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.enable": true, //是否开启vscode的eslint
+  // vscode默认启用了根据文件类型自动设置tabsize的选项
+  "editor.detectIndentation": false,
+  // 重新设定tabsize
+  "editor.tabSize": 2,
+  //  #去掉代码结尾的分号 
+  "prettier.semi": true,
+  //  #使用单引号替代双引号 
+  "prettier.singleQuote": true,
+  "javascript.preferences.quoteStyle": "double",
+  "typescript.preferences.quoteStyle": "double",
+  //  #让函数(名)和后面的括号之间加个空格
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // 配置 ESLint 检查的文件类型
+  "eslint.validate": [
+    "javascript",
+    "vue",
+    "html"
+  ],
+  "eslint.options": { //指定vscode的eslint所处理的文件的后缀
+    "extensions": [
+      ".js",
+      ".vue",
+      ".ts",
+      ".tsx"
+    ]
+  },
+  "git.enableSmartCommit": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "workbench.editor.showTabs": true,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "gitlens.advanced.messages": {
+    "suppressCommitHasNoPreviousCommitWarning": false,
+    "suppressCommitNotFoundWarning": false,
+    "suppressFileNotUnderSourceControlWarning": false,
+    "suppressGitVersionWarning": false,
+    "suppressLineUncommittedWarning": false,
+    "suppressNoRepositoryWarning": false,
+    "suppressResultsExplorerNotice": false,
+    "suppressShowKeyBindingsNotice": true,
+    "suppressUpdateNotice": false,
+    "suppressWelcomeNotice": true
+  },
+  "gitlens.keymap": "alternate",
+  "git.enableSmartCommit": true,
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.views.fileHistory.enabled": true,
+  "gitlens.views.lineHistory.enabled": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": {
+    "*.xlsx": "default"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "window.zoomLevel": 1,
+}

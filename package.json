@@ -1,0 +1,28 @@
+{
+  "name": "micro-next-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "micro-next": "./bin/micro-next-init.js"
+  },
+  "keywords": [
+    "micro-next",
+    "micro"
+  ],
+  "author": "kongmengzhen",
+  "license": "ISC",
+  "dependencies": {
+    "cfonts": "^2.10.0",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
+    "download-git-repo": "^3.0.2",
+    "glob": "^7.2.0",
+    "inquirer": "^8.2.0",
+    "log-symbols": "^5.0.0",
+    "ora": "^6.0.1"
+  }
+}
