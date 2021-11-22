@@ -7,9 +7,9 @@ const microEngineering = require('./microEngineering');
 
 // 创建主应用
 program
-  .command('init <app-name>')
-  .description('init a new main_app project powered by micro-next-cli')
-  .option('init', 'init <app-name>')
+  .command('basic <app-name>')
+  .description('create a new main project powered by micro-next-cli')
+  .option('basic', 'basic <app-name>')
   .action((name, cmd) => {
     create(name, cmd, false);
   });
@@ -17,7 +17,7 @@ program
 // 创建子应用
 program
   .command('sub <app-name>')
-  .description('create sub a new project powered by micro-next-cli')
+  .description('create a new sub project powered by micro-next-cli')
   .option('sub', 'sub <app-name>')
   .action((name, cmd) => {
     create(name, cmd, true);

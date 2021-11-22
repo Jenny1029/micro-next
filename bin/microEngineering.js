@@ -20,16 +20,16 @@ module.exports = (isSubApp) => {
           '请选择您当前的项目技术栈，我们会根据您的项目技术栈类型帮您的项目微前端化',
         name: 'techStack',
         choices: [
-          { name: 'vue 2.0', value: '1' },
+          { name: 'React', value: '1' },
+          { name: 'vue 2.0', value: '2' },
           // { name: 'vue 3.0', value: '2' },
-          { name: 'React', value: '3' },
         ],
       },
     ])
     .then((answer) => {
       // 子应用项目改造微前端
       if (isSubApp) {
-        if (answer.techStack === '3') {
+        if (answer.techStack === '1') {
           try {
             createFile(
               '../template/react/sub/public-path.js',
@@ -94,7 +94,7 @@ module.exports = (isSubApp) => {
         }
       } else {
         // 主应用项目改造成微前端
-        if (answer.techStack === '3') {
+        if (answer.techStack === '1') {
           // react项目定制化改造
           try {
             // 添加微前端列表
